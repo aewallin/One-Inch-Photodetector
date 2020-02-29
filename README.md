@@ -1,12 +1,12 @@
 # One-Inch-Photodetector
 Photodiode transimpedance amplifier, on a one inch diameter (25 mm) circular 2-sided PCB - for mounting in standard 1" lens holders.
 
-The board features low-noise LDOs LT3042 and LT3093 to produce +V and -V DC-rails for the op-amp. The photodiode footprint is TO-18, to fit e.g. Hamamatsu Si photodiodes S5973, S5972, S5973, or Thorlabs Si detectors FDS015, FDS025, FD11A, or Thorlabs InGaAs detectors such as FGA01, FGA01FC, FGA015, FDGA05, FD05D, FD10D.
+The board features low-noise LDOs [LT3042](https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf) and [LT3093](https://www.analog.com/media/en/technical-documentation/data-sheets/lt3093.pdf) to produce +V and -V DC-rails for the op-amp. The photodiode footprint is TO-18, to fit e.g. Hamamatsu Si photodiodes [S5973, S5972, S5973](https://www.hamamatsu.com/resources/pdf/ssd/s5971_etc_kpin1025e.pdf), or Thorlabs Si detectors FDS015, FDS025, FD11A, or Thorlabs InGaAs detectors such as FGA01, FGA01FC, FGA015, FDGA05, FD05D, FD10D.
 
 The output is DC-coupled to a MMCX connector, to fit the small board.
 
 ## SOT23 variant
-This version of the detector is for a SOT23 op-amp such as OPA657, OPA847, and similar.
+This version of the detector is for a SOT23 op-amp such as [OPA657(FET 1.6GHz)](http://www.ti.com/lit/ds/sbos197f/sbos197f.pdf), [OPA847(bipolar 3.9GHz)](http://www.ti.com/lit/ds/symlink/opa847.pdf), and similar.
 
 Example designs
 * [OPA657 op-amp, S5973 photodiode, 10 kOhm RF](http://www.anderswallin.net/2020/01/one-inch-photodetector-v1/), around 59 MHz -3 dB bandwidth. With measured [signal and noise spectra](http://www.anderswallin.net/2020/01/photodetector-signal-and-noise/)
@@ -15,7 +15,7 @@ Example designs
 
 
 ## WSON8 variant
-This version is for modern op-amps in WSON8 footprint such as OPA855, OPA858, OPA859
+This version is for modern op-amps in WSON8 footprint such as [OPA855(bipolar 8GHz)](http://www.ti.com/lit/ds/symlink/opa855.pdf), [OPA858(FET 5.5GHz)](https://www.ti.com/lit/ds/symlink/opa858.pdf), [OPA859(FET 1.9GHz)](http://www.ti.com/lit/ds/symlink/opa859.pdf)
 
 ![wson8_pcb_image](circular_WSON8.png)
 
