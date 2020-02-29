@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "1\" Photodiode Transimpedance Amplifier"
+Title "1\" Photodiode Transimpedance Amplifier - SOT23"
 Date "2019-12-20"
 Rev "draft"
 Comp "anders.e.e.wallin \"at\" gmail.com"
@@ -971,4 +971,16 @@ Wire Wire Line
 Wire Wire Line
 	5250 1850 5250 2200
 Connection ~ 5250 2200
+Text Notes 7950 1400 0    50   ~ 0
+Copyright Anders E E Wallin, 2020.\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.2.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable\nconditions\n
+Wire Notes Line
+	7900 650  11000 650 
+Wire Notes Line
+	11000 650  11000 1450
+Wire Notes Line
+	11000 1450 7900 1450
+Wire Notes Line
+	7900 1450 7900 650 
+Text Notes 600  5200 0    50   ~ 0
+MAX +/-20 V DC input
 $EndSCHEMATC
