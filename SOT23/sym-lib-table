@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name circulaire-rescue)(type Legacy)(uri ${KIPRJMOD}/circulaire-rescue.lib)(options "")(descr ""))
+)
