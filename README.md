@@ -5,12 +5,15 @@ The board features low-noise LDOs LT3042 and LT3093 to produce +V and -V DC-rail
 
 The output-connector is MMCX, to fit the small board).
 
-# SOT23 variant
+## SOT23 variant
 This version of the detector is for a SOT23 op-amp such as OPA657, OPA847, and similar.
 
 ![sot23_pcb_image](circulaire_SOT23.png)
 
 
-# WSON8 variant
-
+## WSON8 variant
 This version is for modern op-amps in WSON8 footprint such as OPA855, OPA858, OPA859
+
+![wson8_pcb_image](circular_WSON8.png)
+
+
