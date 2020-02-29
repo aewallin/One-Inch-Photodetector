@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 23)
+    (drawings 28)
     (tracks 282)
     (zones 0)
     (modules 34)
@@ -10,6 +10,12 @@
   )
 
   (page A4)
+  (title_block
+    (title "One Inch Photodetector - WSON8")
+    (date 2020-02)
+    (company "anders.e.e.wallin \"at\" gmail.com")
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -1450,6 +1456,13 @@
     )
   )
 
+  (gr_line (start 210 40) (end 210 20) (layer Dwgs.User) (width 0.15) (tstamp 5E5A3EAA))
+  (gr_line (start 280 40) (end 210 40) (layer Dwgs.User) (width 0.15))
+  (gr_line (start 280 20) (end 280 40) (layer Dwgs.User) (width 0.15))
+  (gr_line (start 210 20) (end 280 20) (layer Dwgs.User) (width 0.15))
+  (gr_text "Copyright Anders E E Wallin, 2020.\nThis documentation describes Open Hardware and is licensed under the\nCERN OHL v. 1.2.\nYou may redistribute and modify this documentation under the terms of the\nCERN OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable\nconditions\n" (at 216 30) (layer Dwgs.User)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left))
+  )
   (gr_text - (at 160.25 101) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

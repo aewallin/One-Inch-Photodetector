@@ -1,4 +1,4 @@
-update=23.2.2020 17.20.39
+update=la 29. helmikuuta 2020 12.34.52
 version=1
 last_client=kicad
 [general]
