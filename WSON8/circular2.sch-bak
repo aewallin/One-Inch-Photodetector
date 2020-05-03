@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "1\" Photodiode Transimpedance Amplifier"
+Title "1\" Photodiode Transimpedance Amplifier - WSON8"
 Date "2019-12-20"
 Rev "draft"
 Comp "anders.e.e.wallin \"at\" gmail.com"
@@ -810,8 +810,6 @@ F 3 "~" H 10550 5950 50  0001 C CNN
 $EndComp
 Text Notes 10250 6400 0    50   ~ 0
 Open Hardware
-Text Notes 5000 1750 0    50   ~ 0
-Op-amps:\nLTC6268-10\nnote: only +/- 2.5V supplies\ninput cap 0p45 CM and 0p1 DIF \n\nLMH6629\ninput cap 1p7 (CM) and 4p (DIFF)\n\nOPA847\ninput cap  1p7 CM and 2p DIFF
 Text Notes 1100 2400 0    50   ~ 0
 Alternative photodiodes\nOSI FCI-125G-006HRL\nHamamatsu S9055(-01)\nThorlabs FDS015, FDS025
 $Comp
