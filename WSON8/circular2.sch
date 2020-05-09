@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L circular2-rescue:S597x-aw-circulaire-rescue D102
+L Sensor_Optical:S5973 D102
 U 1 1 5E080605
 P 3250 2550
 F 0 "D102" V 3296 2727 50  0000 L CNN
@@ -380,14 +380,14 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.
 	1    0    0    -1  
 $EndComp
 $Comp
-L circular2-rescue:LT3093xMSE-aw-circulaire-rescue U102
+L Regulator_Linear:LT3093xMSE U102
 U 1 1 5DFD4B04
-P 3400 6600
-F 0 "U102" H 3400 6875 50  0000 C CNN
-F 1 "LT3093xMSE" H 3400 6966 50  0000 C CNN
-F 2 "Package_SO:MSOP-12-1EP_3x4mm_P0.65mm_EP1.65x2.85mm" H 3400 6925 50  0001 C CNN
-F 3 "" H 3400 6600 50  0001 C CNN
-	1    3400 6600
+P 3400 6500
+F 0 "U102" H 3400 6775 50  0000 C CNN
+F 1 "LT3093xMSE" H 3400 6866 50  0000 C CNN
+F 2 "Package_SO:MSOP-12-1EP_3x4mm_P0.65mm_EP1.65x2.85mm" H 3400 6825 50  0001 C CNN
+F 3 "" H 3400 6500 50  0001 C CNN
+	1    3400 6500
 	1    0    0    1   
 $EndComp
 $Comp
@@ -883,7 +883,7 @@ Wire Wire Line
 	4000 2950 3250 2950
 Connection ~ 4350 2200
 $Comp
-L circular2-rescue:OPA859xDSG-Amplifier_Operational U103
+L Amplifier_Operational:OPA859xDSG U103
 U 1 1 5E31BB57
 P 4700 3050
 F 0 "U103" H 4950 3000 50  0000 C CNN
