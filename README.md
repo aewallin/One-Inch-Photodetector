@@ -1,6 +1,8 @@
 # One-Inch-Photodetector
 Photodiode transimpedance amplifier, on a one inch diameter (25 mm) circular 2-sided PCB - for mounting in standard 1" lens holders.
 
+[TIASim](https://github.com/aewallin/TIASim) can be used to predict gain, noise, and bandwidth using different op-amps, transimpedance-gains, etc. Initial results show that capacitive loading on the MMCX connector, when connecting a coaxial cable to Spectrum Analyzer or Oscilloscope, plays a role. TIASim predictions agree with measurements when op-amp GBWP is 'de-rated' slightly - probably due to the capacitive load on the output. Future versions will use a buffer/cable-driver (like BUF602) to isolate the sensitive transimpedance amplifier for the output loading.
+
 The board features low-noise LDOs [LT3042](https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf) and [LT3093](https://www.analog.com/media/en/technical-documentation/data-sheets/lt3093.pdf) to produce +V and -V DC-rails for the op-amp. The photodiode footprint is TO-18, to fit e.g. Hamamatsu Si photodiodes [S5973, S5972, S5973](https://www.hamamatsu.com/resources/pdf/ssd/s5971_etc_kpin1025e.pdf), or Thorlabs Si detectors FDS015, FDS025, FD11A, or Thorlabs InGaAs detectors such as FGA01, FGA01FC, FGA015, FDGA05, FD05D, FD10D.
 
 The output is DC-coupled to a MMCX connector, to fit the small board.
