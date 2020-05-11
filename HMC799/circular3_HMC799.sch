@@ -573,8 +573,8 @@ Text Notes 3050 7200 0    50   ~ 0
 LT3093EMSE#PBF-ND
 Text Notes 7750 3200 0    50   ~ 0
 WM5557-ND
-Text Notes 8750 4000 0    50   ~ 0
-12" MMCX-to-SMA lead, RG316\n744-1700-ND
+Text Notes 8700 3100 0    50   ~ 0
+Cable:\n12" MMCX-to-SMA lead, RG316\n744-1700-ND
 Text Label 1650 6100 0    50   ~ 0
 -VIN
 Text Label 1650 5050 0    50   ~ 0
