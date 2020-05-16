@@ -1,22 +1,31 @@
 # One-Inch-Photodetector
-Photodiode transimpedance amplifier, on a one inch diameter (25 mm) circular 2-sided PCB - for mounting in standard 1" lens holders.
+Photodiode transimpedance amplifier, on a one inch diameter (25 mm) circular 2-sided PCB - for mounting in a
+standard 1" lens-mount.
 
-[TIASim](https://github.com/aewallin/TIASim) can be used to predict gain, noise, and bandwidth using different op-amps, transimpedance-gains, etc. Initial results show that capacitive loading on the MMCX connector, when connecting a coaxial cable to Spectrum Analyzer or Oscilloscope, plays a role. TIASim predictions agree with measurements when op-amp GBWP is 'de-rated' slightly - probably due to the capacitive load on the output. Future versions will use a buffer/cable-driver (like BUF602) to isolate the sensitive transimpedance amplifier for the output loading.
+[TIASim](https://github.com/aewallin/TIASim) can be used to predict gain, noise, and bandwidth using different op-amps, 
+transimpedance-gains, etc. Initial results show that capacitive loading on the MMCX connector, when 
+connecting a coaxial cable to Spectrum Analyzer or Oscilloscope, plays a role. TIASim predictions agree 
+with measurements when op-amp GBWP is 'de-rated' slightly - probably due to the capacitive load on the output. 
+Future versions will use a buffer/cable-driver (like BUF602) to isolate the sensitive transimpedance amplifier 
+for the output loading.
 
-The board features low-noise LDOs [LT3042](https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf) and [LT3093](https://www.analog.com/media/en/technical-documentation/data-sheets/lt3093.pdf) to produce +V and -V DC-rails for the op-amp. The photodiode footprint is TO-18, to fit e.g. Hamamatsu Si photodiodes [S5973, S5972, S5973](https://www.hamamatsu.com/resources/pdf/ssd/s5971_etc_kpin1025e.pdf), or Thorlabs Si detectors FDS015, FDS025, FD11A, or Thorlabs InGaAs detectors such as FGA01, FGA01FC, FGA015, FDGA05, FD05D, FD10D.
+The board features low-noise LDOs [LT3042](https://www.analog.com/media/en/technical-documentation/data-sheets/3042fb.pdf) 
+and [LT3093](https://www.analog.com/media/en/technical-documentation/data-sheets/lt3093.pdf) to produce +V and -V 
+DC-rails for the op-amp. The photodiode footprint is TO-18, to fit e.g. Hamamatsu Si photodiodes 
+[S5973, S5972, S5973](https://www.hamamatsu.com/resources/pdf/ssd/s5971_etc_kpin1025e.pdf), or Thorlabs 
+Si detectors FDS015, FDS025, FD11A, or Thorlabs InGaAs detectors such as FGA01, FGA01FC, FGA015, FDGA05, FD05D, FD10D.
 
 The output is DC-coupled to a MMCX connector, to fit the small board.
 
 Examples of completed and teseted boards:
-* [OPA657 op-amp, S5973 photodiode, 10 kOhm RF](http://www.anderswallin.net/2020/01/one-inch-photodetector-v1/), around 59 MHz -3 dB bandwidth. With measured [signal and noise spectra](http://www.anderswallin.net/2020/01/photodetector-signal-and-noise/)
-* [OPA657, S5971 photodiode, 1 MOhm transimpedace](http://www.anderswallin.net/2020/05/1-mohm-4-mhz-photodetector/), 4 MHz bandwidth
+* (SOT23-board, unbuffered) [OPA657 op-amp, S5973 photodiode, 10 kOhm RF](http://www.anderswallin.net/2020/01/one-inch-photodetector-v1/), around 59 MHz -3 dB bandwidth. With measured [signal and noise spectra](http://www.anderswallin.net/2020/01/photodetector-signal-and-noise/)
+* (SOT23-board, unbuffered) [OPA657, S5971 photodiode, 1 MOhm transimpedace](http://www.anderswallin.net/2020/05/1-mohm-4-mhz-photodetector/), 4 MHz bandwidth
 
 ![sot23_mounted_image](doc/oip_20200504.jpg)
 (May 2020) SOT23 detector mounted in 1" lens-mount. DC-inputs (+,GND,-) at the bottom. LDOs left and right of the DC-inputs. Photodiode center. Op-amp at the top with MMCX output-connector on the backside of the board, top right.
 
 
 ## HMC799 variant
-
 [HMC799](https://www.analog.com/media/en/technical-documentation/data-sheets/hmc799.pdf) is a 10 kOhm transimpedance amplifier with up to 700 MHz bandwidth.
 
 This design also uses a [BUF602](https://www.ti.com/lit/ds/symlink/buf602.pdf) output buffer, to hopefully avoid capacitive loading of the transimpedance amplifier as coaxial cables are connected to the output.
