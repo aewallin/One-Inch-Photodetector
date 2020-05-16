@@ -15,6 +15,10 @@ DC-rails for the op-amp. The photodiode footprint is TO-18, to fit e.g. Hamamats
 [S5973, S5972, S5973](https://www.hamamatsu.com/resources/pdf/ssd/s5971_etc_kpin1025e.pdf), or Thorlabs 
 Si detectors FDS015, FDS025, FD11A, or Thorlabs InGaAs detectors such as FGA01, FGA01FC, FGA015, FDGA05, FD05D, FD10D.
 
+Thorlabs photodiodes seem to match OSI part numbers:
+* Thorlabs FDS015, marked FCI-125G-006HR
+* Thorlabs FDS025, marked FCI-125G-010HRL
+
 The output is DC-coupled to a MMCX connector, to fit the small board.
 
 Examples of completed and teseted boards:
