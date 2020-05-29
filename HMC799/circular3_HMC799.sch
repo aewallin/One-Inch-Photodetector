@@ -112,7 +112,7 @@ Wire Wire Line
 Connection ~ 5100 1850
 Wire Wire Line
 	5100 1850 5100 1800
-Text Label 5250 1850 0    50   ~ 0
+Text Label 4550 2150 0    50   ~ 0
 +V
 $Comp
 L power:GND #PWR0104
@@ -709,7 +709,7 @@ Wire Wire Line
 	4300 2950 4350 2950
 Wire Wire Line
 	4000 2950 3250 2950
-Text Label 3250 2300 0    50   ~ 0
+Text Label 3250 2000 0    50   ~ 0
 +V
 $Comp
 L power:GND #PWR0105
@@ -824,10 +824,33 @@ F 3 "~" H 1150 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3250 2600 3250 2550
-Connection ~ 3250 2550
 Wire Wire Line
 	3250 2900 3250 2950
 Connection ~ 3250 2950
+Text Notes 4050 3150 0    50   ~ 0
+0402
+Text Notes 5300 3150 0    50   ~ 0
+0402
+Text Notes 5100 3600 1    50   ~ 0
+0402
+Text Notes 3550 2650 0    50   ~ 0
+HMC799 input-impedance\n175R @ 350 MHz
+Text Notes 3150 2900 1    50   ~ 0
+ferrite?
+$Comp
+L Device:L L101
+U 1 1 5ED113A8
+P 3250 2350
+F 0 "L101" H 3303 2396 50  0000 L CNN
+F 1 "L" H 3303 2305 50  0000 L CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 3250 2350 50  0001 C CNN
+F 3 "~" H 3250 2350 50  0001 C CNN
+	1    3250 2350
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3250 2300 3250 2550
+	3250 2500 3250 2550
+Connection ~ 3250 2550
+Wire Wire Line
+	3250 2200 3250 2000
 $EndSCHEMATC
