@@ -30,6 +30,8 @@ Examples of completed and teseted boards:
 
 
 ## HMC799 with BUF602 output-buffer
+NOTE: the prototype-board has not worked correctly so far. shows self-oscillations. build at your own risk!
+
 [HMC799](https://www.analog.com/media/en/technical-documentation/data-sheets/hmc799.pdf) is a 10 kOhm transimpedance amplifier with up to 700 MHz bandwidth.
 
 This design also uses a [BUF602](https://www.ti.com/lit/ds/symlink/buf602.pdf) output buffer, to hopefully avoid capacitive loading of the transimpedance amplifier as coaxial cables are connected to the output.
