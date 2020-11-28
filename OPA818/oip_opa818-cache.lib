@@ -257,11 +257,11 @@ X A 3 300 0 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# oip_opa818-rescue_OPA818IDRGx-aw
+# oip_opa818-rescue_OPA818IDRGx-aw-oip_opa818-rescue
 #
-DEF oip_opa818-rescue_OPA818IDRGx-aw U 0 5 Y Y 1 F N
+DEF oip_opa818-rescue_OPA818IDRGx-aw-oip_opa818-rescue U 0 5 Y Y 1 F N
 F0 "U" 50 350 50 H V L CNN
-F1 "oip_opa818-rescue_OPA818IDRGx-aw" 50 250 50 H V L CNN
+F1 "oip_opa818-rescue_OPA818IDRGx-aw-oip_opa818-rescue" 50 250 50 H V L CNN
 F2 "Package_SON:WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm" -100 600 50 H I C CNN
 F3 "" 400 400 50 H I C CNN
 $FPLIST
