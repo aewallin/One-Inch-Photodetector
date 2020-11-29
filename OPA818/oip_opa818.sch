@@ -349,7 +349,7 @@ L Device:R R101
 U 1 1 5DFDC58D
 P 2900 5250
 F 0 "R101" H 2970 5296 50  0000 L CNN
-F 1 "25k" H 2970 5205 50  0000 L CNN
+F 1 "56k" V 2900 5150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 5250 50  0001 C CNN
 F 3 "~" H 2900 5250 50  0001 C CNN
 	1    2900 5250
@@ -449,7 +449,7 @@ L Device:R R107
 U 1 1 5DFF5E1B
 P 2950 6100
 F 0 "R107" H 3020 6146 50  0000 L CNN
-F 1 "25k" H 3020 6055 50  0000 L CNN
+F 1 "56k" V 2950 6000 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2880 6100 50  0001 C CNN
 F 3 "~" H 2950 6100 50  0001 C CNN
 	1    2950 6100
@@ -662,16 +662,14 @@ Wire Wire Line
 	4450 6700 4450 6750
 Wire Wire Line
 	4200 6700 4450 6700
-Text Notes 2150 3000 0    50   ~ 0
-1495575\nHamamatsu S5973\nCd=1p6 F @ Vr=3V3
 Text Notes 3150 4350 0    50   ~ 0
 LT3042EMSE#PBF-ND
 Text Notes 3050 7200 0    50   ~ 0
 LT3093EMSE#PBF-ND
 Text Notes 7100 3300 0    50   ~ 0
-WM5557-ND
+Digikey WM5557-ND
 Text Notes 7850 3100 0    50   ~ 0
-12" MMCX-to-SMA lead, RG316\n744-1700-ND
+12" MMCX-to-SMA lead, RG316\nDigikey 744-1700-ND
 Text Label 1650 6100 0    50   ~ 0
 -VIN
 Text Label 1650 5050 0    50   ~ 0
@@ -689,8 +687,8 @@ F 3 "~" H 10550 5950 50  0001 C CNN
 $EndComp
 Text Notes 10250 6400 0    50   ~ 0
 Open Hardware
-Text Notes 1100 2400 0    50   ~ 0
-Alternative photodiodes\nOSI FCI-125G-006HRL\nHamamatsu S9055(-01)\nThorlabs FDS015, FDS025
+Text Notes 700  2900 0    50   ~ 0
+Photodiodes with TO-18 footprint:\n\nFarnell 1495575\nHamamatsu S5973\nD= 400um active area\nCd=1.6 pF @ Vr=3V3\n\nThorlabs FDS015\nD=150 um active area\n0.65pF @ Vr = 5 V\n\nThorlabs FDS025\nD= 250 um active area, with ball lens\n0.94 pF @ Vr = 5 V\n\nHamamatsu S5972\nD= 800um active area\n3 pF @ Vr = 10 V\n\nHamamatsu S5971\nD= 1.2 mm active area\n3 pF @ Vr = 10 V\n\n\nOSI FCI-125G-006HRL\nHamamatsu S9055(-01)\n
 $Comp
 L Connector:TestPoint TP102
 U 1 1 5E0E03CC
@@ -866,7 +864,7 @@ Wire Wire Line
 Text Notes 3600 3150 0    50   ~ 0
 R1 10R or 20R
 $Comp
-L oip_opa818-rescue:OPA818IDRGx-aw-oip_opa818-rescue U103
+L oip_opa818-rescue:OPA818IDRGx-aw-oip_opa818-rescue-oip_opa818-rescue U103
 U 1 1 5F1643B5
 P 4700 3050
 F 0 "U103" H 4750 3250 50  0000 L CNN
@@ -2561,7 +2559,17 @@ $EndBitmap
 Wire Wire Line
 	4700 1850 5250 1850
 Text Notes 4300 5700 0    50   ~ 0
-OPA818 max supply voltage 13V\nuse e.g. +V=+6V and -V=-6V
+OPA818 max supply voltage 13V\nuse e.g. +V=+6V and -V=-6V\n\nBUF602 max +/- 6.5 V
 Text Notes 4550 1250 0    50   ~ 0
 TIASim predictions (https://github.com/aewallin/TIASim)\n\nFast detector:\nDiode FDS015, RF 1.2 kOhm, CF 0.6 pF gives BW-3dB: 452 MHz\n\nSlow detector: \nDiode S5973, RF 1 MOhm, CF None, BW-3db: 3.5 MHz\n
+Text Notes 500  5700 0    50   ~ 0
+Lead colors\nBrown (+12V)\nBlack (GND)\nBlue (-12V)
+Text Notes 4600 4700 0    50   ~ 0
+Measured\n+5.57 V
+Text Notes 4550 6700 0    50   ~ 0
+Measured\n-5.59 V
+Text Notes 700  4400 0    50   ~ 0
+PSU:\nThorlabs LDS12B\n±12 VDC Regulated Linear Power Supply, 6 W\nLumberg RSMV3 male connector, 3-pin\n\nPSU-lead: Digikey A120947-ND (mates with Thorlabs 3-pin psu connector)\n3-pin M8 female connector\n1.5 m 3-wire lead, solder to PCB
+Text Notes 5100 3400 0    30   ~ 0
+option:\nDC-coupling with \n0-10R resistor here?
 $EndSCHEMATC
