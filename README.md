@@ -22,12 +22,16 @@ Thorlabs photodiodes seem to match OSI part numbers:
 The output is DC-coupled to a MMCX connector, to fit the small board.
 
 Examples of completed and teseted boards:
+* (OPA818-board, BUF602 output buffer) [OPA818 op-amp, FDS015 or FDS025 photodiode, 1.2 kOhm RF](http://www.anderswallin.net/2020/11/400-mhz-photodetector-with-opa818/), >400 MHz -3dB bandwidth.
 * (SOT23-board, unbuffered) [OPA657 op-amp, S5973 photodiode, 10 kOhm RF](http://www.anderswallin.net/2020/01/one-inch-photodetector-v1/), around 59 MHz -3 dB bandwidth. With measured [signal and noise spectra](http://www.anderswallin.net/2020/01/photodetector-signal-and-noise/)
 * (SOT23-board, unbuffered) [OPA657, S5971 photodiode, 1 MOhm transimpedace](http://www.anderswallin.net/2020/05/1-mohm-4-mhz-photodetector/), 4 MHz bandwidth
 
 ![sot23_mounted_image](doc/oip_20200504.jpg)
 (May 2020) SOT23 detector mounted in 1" lens-mount. DC-inputs (+,GND,-) at the bottom. LDOs left and right of the DC-inputs. Photodiode center. Op-amp at the top with MMCX output-connector on the backside of the board, top right.
 
+## OPA818 with BUF602 output-buffer
+
+This is the best performing board so far, in terms of bandwidth!
 
 ## HMC799 with BUF602 output-buffer
 NOTE: the prototype-board has not worked correctly so far. shows self-oscillations. build at your own risk!
