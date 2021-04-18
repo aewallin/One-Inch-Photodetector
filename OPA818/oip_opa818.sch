@@ -653,9 +653,9 @@ Text Notes 3150 4350 0    50   ~ 0
 LT3042EMSE#PBF-ND
 Text Notes 3050 7200 0    50   ~ 0
 LT3093EMSE#PBF-ND
-Text Notes 7100 3300 0    50   ~ 0
-Digikey WM5557-ND
-Text Notes 7850 3100 0    50   ~ 0
+Text Notes 7100 2950 0    50   ~ 0
+MMCX connector\nDigikey WM5557-ND
+Text Notes 8050 2950 0    50   ~ 0
 12" MMCX-to-SMA lead, RG316\nDigikey 744-1700-ND
 Text Label 1650 6100 0    50   ~ 0
 -VIN
@@ -2559,4 +2559,6 @@ Text Notes 700  4400 0    50   ~ 0
 PSU:\nThorlabs LDS12B\n±12 VDC Regulated Linear Power Supply, 6 W\nLumberg RSMV3 male connector, 3-pin\n\nPSU-lead: Digikey A120947-ND (mates with Thorlabs 3-pin psu connector)\n3-pin M8 female connector\n1.5 m 3-wire lead, solder to PCB
 Text Notes 5100 3400 0    30   ~ 0
 option:\nDC-coupling with \n0-10R resistor here?
+Text Notes 1900 4900 0    50   ~ 0
+SOD323F
 $EndSCHEMATC
