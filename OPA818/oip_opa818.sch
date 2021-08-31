@@ -699,7 +699,7 @@ F 3 "~" H 4650 6750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Label 3250 2150 0    50   ~ 0
-VBIAS
+-5VBIAS
 Text Label 5050 3050 0    50   ~ 0
 VTIA
 $Comp
@@ -851,7 +851,7 @@ Wire Wire Line
 Text Notes 3600 3150 0    50   ~ 0
 R1 10R or 20R
 $Comp
-L oip_opa818-rescue:OPA818IDRGx-aw-oip_opa818-rescue-oip_opa818-rescue U103
+L oip_opa818-rescue:OPA818IDRGx-aw-oip_opa818-rescue-oip_opa818-rescue-oip_opa818-rescue U103
 U 1 1 5F1643B5
 P 4700 3050
 F 0 "U103" H 4750 3250 50  0000 L CNN
