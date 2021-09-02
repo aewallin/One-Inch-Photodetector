@@ -8,22 +8,11 @@ Title "1\" Photodiode Transimpedance Amplifier - OPA818 + BUF602"
 Date "2020-07-21"
 Rev "draft"
 Comp "anders.e.e.wallin \"at\" gmail.com"
-Comment1 ""
+Comment1 "Alternative photodiode pinout (1 Anode, 2 Cathode, 3 Case)"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Sensor_Optical:S5973 D102
-U 1 1 5E080605
-P 3250 2550
-F 0 "D102" V 3296 2727 50  0000 L CNN
-F 1 "S597x" V 3205 2727 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-18-3" H 3250 2900 50  0001 C CNN
-F 3 "http://www.osram-os.com/Graphics/XPic5/00215016_0.pdf/BP%20104%20FS.pdf" H 3250 2550 50  0001 C CNN
-	1    3250 2550
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 5E0815B9
@@ -90,13 +79,13 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0103
 U 1 1 5E0854FC
-P 4300 3200
-F 0 "#PWR0103" H 4300 2950 50  0001 C CNN
-F 1 "GND" H 4305 3027 50  0000 C CNN
-F 2 "" H 4300 3200 50  0001 C CNN
-F 3 "" H 4300 3200 50  0001 C CNN
-	1    4300 3200
-	1    0    0    -1  
+P 4350 2950
+F 0 "#PWR0103" H 4350 2700 50  0001 C CNN
+F 1 "GND" H 4355 2777 50  0000 C CNN
+F 2 "" H 4350 2950 50  0001 C CNN
+F 3 "" H 4350 2950 50  0001 C CNN
+	1    4350 2950
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C C109
@@ -674,8 +663,8 @@ F 3 "~" H 10550 5950 50  0001 C CNN
 $EndComp
 Text Notes 10250 6400 0    50   ~ 0
 Open Hardware
-Text Notes 700  2900 0    50   ~ 0
-Photodiodes with TO-18 footprint:\n\nFarnell 1495575\nHamamatsu S5973\nD= 400um active area\nCd=1.6 pF @ Vr=3V3\n\nThorlabs FDS015\nD=150 um active area\n0.65pF @ Vr = 5 V\n\nThorlabs FDS025\nD= 250 um active area, with ball lens\n0.94 pF @ Vr = 5 V\n\nHamamatsu S5972\nD= 800um active area\n3 pF @ Vr = 10 V\n\nHamamatsu S5971\nD= 1.2 mm active area\n3 pF @ Vr = 10 V\n\n\nOSI FCI-125G-006HRL\nHamamatsu S9055(-01)\n\nThorlabs FGA01FC, InGaAs, 2pF @ 5V\nsame as OSI INGAAS-120L-FC
+Text Notes 600  1750 0    50   ~ 0
+Photodiodes with TO-18 footprint:\n\nPinout:\n1 Anode\n2 Cathode\n3 Case\n\nFermionics FD80FC\nhttps://www.fermionics.com/High-Speed-Devices.html\n\nHamamatsu G9801-32\nhttps://www.hamamatsu.com/eu/en/product/type/G9801-32/index.html
 $Comp
 L Connector:TestPoint TP102
 U 1 1 5E0E03CC
@@ -720,18 +709,16 @@ Wire Wire Line
 $Comp
 L Device:R R1
 U 1 1 5E30676E
-P 4200 2950
-F 0 "R1" V 4100 2950 50  0000 C CNN
-F 1 "10R" V 4200 2950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4130 2950 50  0001 C CNN
-F 3 "~" H 4200 2950 50  0001 C CNN
-	1    4200 2950
+P 4150 3150
+F 0 "R1" V 4050 3150 50  0000 C CNN
+F 1 "10R" V 4150 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4080 3150 50  0001 C CNN
+F 3 "~" H 4150 3150 50  0001 C CNN
+	1    4150 3150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	4400 2950 4350 2950
-Wire Wire Line
-	4050 2950 4000 2950
 Wire Wire Line
 	4000 2950 4000 2650
 Wire Wire Line
@@ -765,8 +752,6 @@ Wire Notes Line
 	7850 1600 7850 750 
 Wire Wire Line
 	4400 3150 4300 3150
-Wire Wire Line
-	4300 3150 4300 3200
 $Comp
 L Amplifier_Buffer:BUF602xDBV U104
 U 1 1 5EBC4501
@@ -848,19 +833,8 @@ Wire Wire Line
 	4800 2350 4800 2300
 Wire Wire Line
 	4800 2300 4600 2300
-Text Notes 3600 3150 0    50   ~ 0
+Text Notes 3700 3300 0    50   ~ 0
 R1 10R or 20R
-$Comp
-L oip_opa818-rescue:OPA818IDRGx-aw-oip_opa818-rescue-oip_opa818-rescue-oip_opa818-rescue U103
-U 1 1 5F1643B5
-P 4700 3050
-F 0 "U103" H 4750 3250 50  0000 L CNN
-F 1 "OPA818IDRGx" H 4750 3350 50  0000 L CNN
-F 2 "awallinKiCadFootprints:WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm" H 4600 3650 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/opa818.pdf" H 5100 3450 50  0001 C CNN
-	1    4700 3050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4600 2650 4600 2750
 NoConn ~ 4700 2750
@@ -2567,4 +2541,28 @@ Text Notes 3300 2800 0    50   ~ 0
 cathode
 Text Notes 3500 2450 0    50   ~ 0
 case
+$Comp
+L Amplifier_Operational:OPA818xDRG U1
+U 1 1 61317068
+P 4700 3050
+F 0 "U1" H 4800 3400 50  0000 L CNN
+F 1 "OPA818xDRG" H 4750 3300 50  0000 L CNN
+F 2 "Package_SON:WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm" H 4600 3650 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/opa818.pdf" H 5100 3450 50  0001 C CNN
+	1    4700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L aw:TO18_photodiode_altpinout D1
+U 1 1 61335F33
+P 3250 2550
+F 0 "D1" V 3296 2727 50  0000 L CNN
+F 1 "TO18_photodiode_altpinout" V 3500 1700 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-18-3" H 3250 2900 50  0001 C CNN
+F 3 "https://www.hamamatsu.com/resources/pdf/ssd/s5971_etc_kpin1025e.pdf" H 3250 2550 50  0001 C CNN
+	1    3250 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 3150 4000 2950
 $EndSCHEMATC
