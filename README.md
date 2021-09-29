@@ -20,9 +20,14 @@ Thorlabs photodiodes seem to match OSI part numbers:
 * Thorlabs FDS015, marked FCI-125G-006HR
 * Thorlabs FDS025, marked FCI-125G-010HRL
 
+Photodiodes with alternative pinout (OPA818alt PCB, 2.54mm pin-circle-diameter, 1 Anode, 2 Cathode, 3 Case):
+* [Fermionics](https://www.fermionics.com/High-Speed-Devices.html) FD80FC, InGaAs, 0.4 pF capacitance
+* [Hamamatsu G9801-32](https://www.hamamatsu.com/eu/en/product/type/G9801-32/index.html), InGaAs, 1 pF
+
 The output is DC-coupled to a MMCX connector, to fit the small board.
 
 Examples of completed and teseted boards:
+* (OPA818alt-board, BUF602 output buffer) [OPA919, Fermionics FD80FC, 5.1 kOhm RF](https://www.anderswallin.net/2021/09/250mhz-detector-with-fermionics-fd80fc-photodiode/) 250 MHz bandwidth.
 * (OPA818-board, BUF602 output buffer) [OPA818 op-amp, FGA01FC photodiode, 4.7 kOhm RF](http://www.anderswallin.net/2021/04/200mhz-photodetector-with-opa818-fga01fc-ingaas-photodiode-and-rf4k7/), >200 MHz -3dB bandwidth.
 * (OPA818-board, BUF602 output buffer) [OPA818 op-amp, FDS015 or FDS025 photodiode, 1.2 kOhm RF](http://www.anderswallin.net/2020/11/400-mhz-photodetector-with-opa818/), >400 MHz -3dB bandwidth.
 * (SOT23-board, unbuffered) [OPA657 op-amp, S5973 photodiode, 10 kOhm RF](http://www.anderswallin.net/2020/01/one-inch-photodetector-v1/), around 59 MHz -3 dB bandwidth. With measured [signal and noise spectra](http://www.anderswallin.net/2020/01/photodetector-signal-and-noise/)
