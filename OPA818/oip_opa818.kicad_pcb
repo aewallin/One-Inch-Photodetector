@@ -443,7 +443,7 @@
     (tags "capacitor")
     (path "/00000000-0000-0000-0000-00005e0879d1")
     (attr smd)
-    (fp_text reference "C108" (at -0.5 -1) (layer "F.SilkS")
+    (fp_text reference "C108" (at -0.75 -1.25) (layer "F.SilkS")
       (effects (font (size 0.5 0.5) (thickness 0.1)))
       (tstamp 5ee2adf0-1a71-404c-91ed-e0ee9563acff)
     )
@@ -483,7 +483,7 @@
     (tags "capacitor")
     (path "/00000000-0000-0000-0000-00005dff63b0")
     (attr smd)
-    (fp_text reference "C112" (at -2.691252 -0.084642 70) (layer "F.SilkS")
+    (fp_text reference "C112" (at -3.481526 -0.06305 70) (layer "F.SilkS")
       (effects (font (size 0.5 0.5) (thickness 0.1)))
       (tstamp 721eced1-7601-448b-b032-57ae840a5bc6)
     )
@@ -690,7 +690,7 @@
     (tags "resistor")
     (path "/00000000-0000-0000-0000-00005dfdc58d")
     (attr smd)
-    (fp_text reference "R101" (at 1.5 1.1 90) (layer "F.SilkS")
+    (fp_text reference "R101" (at 1.55 1.95 90) (layer "F.SilkS")
       (effects (font (size 0.5 0.5) (thickness 0.1)))
       (tstamp d3a51349-28f4-4529-a091-383e21c10a0b)
     )
@@ -3674,7 +3674,7 @@
   (zone (net 0) (net_name "") (layers F&B.Cu) (tstamp 69ab893d-e72a-4903-8a42-16f6b5eb229b) (hatch edge 0.508)
     (connect_pads (clearance 0))
     (min_thickness 0.254)
-    (keepout (tracks allowed) (vias allowed) (pads allowed ) (copperpour not_allowed) (footprints allowed))
+    (keepout (tracks allowed) (vias allowed) (pads allowed) (copperpour not_allowed) (footprints allowed))
     (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
@@ -3688,7 +3688,7 @@
   (zone (net 0) (net_name "") (layers F&B.Cu) (tstamp 72745e37-6398-4523-a0b8-fcae44c9df22) (hatch edge 0.508)
     (connect_pads (clearance 0))
     (min_thickness 0.254)
-    (keepout (tracks allowed) (vias allowed) (pads allowed ) (copperpour not_allowed) (footprints allowed))
+    (keepout (tracks allowed) (vias allowed) (pads allowed) (copperpour not_allowed) (footprints allowed))
     (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
@@ -3702,7 +3702,7 @@
   (zone (net 0) (net_name "") (layer "F.Cu") (tstamp bc12d55d-3029-4430-9232-337b1a62028e) (hatch edge 0.508)
     (connect_pads (clearance 0))
     (min_thickness 0.254)
-    (keepout (tracks allowed) (vias allowed) (pads allowed ) (copperpour not_allowed) (footprints allowed))
+    (keepout (tracks allowed) (vias allowed) (pads allowed) (copperpour not_allowed) (footprints allowed))
     (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
@@ -3716,7 +3716,7 @@
   (zone (net 0) (net_name "") (layer "F.Cu") (tstamp ef79b516-f387-4bff-98aa-61eff96e72d2) (hatch edge 0.508)
     (connect_pads (clearance 0))
     (min_thickness 0.254)
-    (keepout (tracks allowed) (vias allowed) (pads allowed ) (copperpour not_allowed) (footprints allowed))
+    (keepout (tracks allowed) (vias allowed) (pads allowed) (copperpour not_allowed) (footprints allowed))
     (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
