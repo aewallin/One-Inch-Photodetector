@@ -10,6 +10,7 @@
     (rev "draft")
     (company "anders.e.e.wallin \"at\" gmail.com")
     (comment 1 "Alternative photodiode pinout (1 Anode, 2 Cathode, 3 Case)")
+    (comment 2 "250MHz beat-note detector: Fermionics FD80FC with 5.1k RF")
   )
 
   (lib_symbols
@@ -5269,7 +5270,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6e68f0cd-800e-4167-9553-71fc59da1eeb)
   )
-  (text "option:\nDC-coupling with \n0-10R resistor here?" (at 129.54 86.36 0)
+  (text "NOTE: DC-coupled\nAC-coupling requires\nbias-circut for BUF602 \n(see datasheet)"
+    (at 129.54 86.36 0)
     (effects (font (size 0.762 0.762)) (justify left bottom))
     (uuid 6f80f798-dc24-438f-a1eb-4ee2936267c8)
   )
@@ -5323,7 +5325,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f66398f1-1ae7-4d4d-939f-958c174c6bce)
   )
-  (text "PSU:\nThorlabs LDS12B\n±12 VDC Regulated Linear Power Supply, 6 W\nLumberg RSMV3 male connector, 3-pin\n\nPSU-lead: Digikey A120947-ND (mates with Thorlabs 3-pin psu connector)\n3-pin M8 female connector\n1.5 m 3-wire lead, solder to PCB"
+  (text "PSU:\nThorlabs LDS12B\n±12 VDC Regulated Linear Power Supply, 6 W\nLumberg RSMV3 male connector, 3-pin\nNOTE: very high 50Hz magnetic field from this PSU!!\n\nPSU-lead: Digikey A120947-ND (mates with Thorlabs 3-pin psu connector)\n3-pin M8 female connector\n1.5 m 3-wire lead, solder to PCB"
     (at 143.51 165.1 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f78e02cd-9600-4173-be8d-67e530b5d19f)
@@ -6280,25 +6282,6 @@
     (pin "1" (uuid 80de6f33-6b01-4f31-b142-a57089180fe8))
   )
 
-  (symbol (lib_id "Device:C") (at 135.89 77.47 90) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005f175d9c)
-    (property "Reference" "C116" (id 0) (at 133.35 82.55 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100n" (id 1) (at 138.43 82.55 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (id 2) (at 139.7 76.5048 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 135.89 77.47 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 25bb677d-cbf6-4f6a-a164-31b3571d23b0))
-    (pin "2" (uuid fdc3f867-55ce-42eb-bea2-bc8f99dd5479))
-  )
-
   (symbol (lib_id "Amplifier_Operational:OPA818xDRG") (at 119.38 77.47 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061317068)
@@ -6343,6 +6326,21 @@
     (pin "3" (uuid 93c82583-7ca4-47b9-81d3-24b1eb689576))
     (pin "1" (uuid 272b22b3-993f-4aea-8ccb-6c3766e10993))
     (pin "2" (uuid 6a8bcb07-2e79-4a49-924c-a79720065ac6))
+  )
+
+  (symbol (lib_id "Device:R") (at 135.89 77.47 270) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 38bb075f-ece2-4385-8f6c-7e3cdc19e4b4)
+    (property "Reference" "R2" (id 0) (at 135.89 74.93 90))
+    (property "Value" "10R" (id 1) (at 135.89 77.47 90))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 135.89 75.692 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 135.89 77.47 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e345f9c1-d793-4985-8d56-c12da658fc11))
+    (pin "2" (uuid e294dfa1-e8e0-4b40-948f-b460899d1c29))
   )
 
   (sheet_instances
@@ -6452,9 +6450,6 @@
     (path "/00000000-0000-0000-0000-00005e10a98a"
       (reference "C115") (unit 1) (value "C") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
-    (path "/00000000-0000-0000-0000-00005f175d9c"
-      (reference "C116") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0402_1005Metric")
-    )
     (path "/00000000-0000-0000-0000-000061335f33"
       (reference "D1") (unit 1) (value "TO18_photodiode_altpinout") (footprint "Package_TO_SOT_THT:TO-18-3")
     )
@@ -6475,6 +6470,9 @@
     )
     (path "/00000000-0000-0000-0000-00005e30676e"
       (reference "R1") (unit 1) (value "10R") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/38bb075f-ece2-4385-8f6c-7e3cdc19e4b4"
+      (reference "R2") (unit 1) (value "10R") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005dfdc58d"
       (reference "R101") (unit 1) (value "56k") (footprint "Resistor_SMD:R_0603_1608Metric")
