@@ -2640,10 +2640,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d8200e04-fbd1-42a1-a784-0ae13e33b7e7)
   )
-  (text "option:\nDC-coupling with \n0-10R resistor here?" (at 129.54 86.36 0)
-    (effects (font (size 0.762 0.762)) (justify left bottom))
-    (uuid dcc12207-b305-4c5f-9f4f-f474f533681a)
-  )
   (text "SOD323F" (at 48.26 124.46 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid dd3686c8-9538-4ebb-933d-77d631c38f1b)
@@ -3646,23 +3642,19 @@
     (pin "1" (uuid 06e3df6a-1986-4775-ad64-0097136fb3f3))
   )
 
-  (symbol (lib_id "Device:C") (at 135.89 77.47 90) (unit 1)
+  (symbol (lib_id "Device:R") (at 135.89 77.47 270) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid 00000000-0000-0000-0000-00005f175d9c)
-    (property "Reference" "C116" (id 0) (at 133.35 82.55 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100n" (id 1) (at 138.43 82.55 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (id 2) (at 139.7 76.5048 0)
+    (uuid df83dace-7d40-4784-a916-9861fd8c1302)
+    (property "Reference" "RF1" (id 0) (at 135.89 74.93 90))
+    (property "Value" "10R" (id 1) (at 135.89 77.47 90))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 135.89 75.692 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 135.89 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2459e140-0462-437e-95aa-77ba1a2adf15))
-    (pin "2" (uuid 99d8b21d-265b-4bcc-9a16-816cb7b8dee7))
+    (pin "1" (uuid bce4b84e-45d6-41af-a099-c34d5cb577d6))
+    (pin "2" (uuid 2c58cab9-a41f-4dce-aa4d-3e6b9aed8c8b))
   )
 
   (sheet_instances
@@ -3772,9 +3764,6 @@
     (path "/00000000-0000-0000-0000-00005e10a98a"
       (reference "C115") (unit 1) (value "C") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
-    (path "/00000000-0000-0000-0000-00005f175d9c"
-      (reference "C116") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0402_1005Metric")
-    )
     (path "/00000000-0000-0000-0000-00005dfdaa2e"
       (reference "D101") (unit 1) (value "D") (footprint "Diode_SMD:D_SOD-323F")
     )
@@ -3807,6 +3796,9 @@
     )
     (path "/00000000-0000-0000-0000-00005dff5e1b"
       (reference "R107") (unit 1) (value "56k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/df83dace-7d40-4784-a916-9861fd8c1302"
+      (reference "RF1") (unit 1) (value "10R") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/00000000-0000-0000-0000-00005e082b6c"
       (reference "RF101") (unit 1) (value "R") (footprint "Resistor_SMD:R_0402_1005Metric")
